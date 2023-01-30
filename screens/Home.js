@@ -47,7 +47,7 @@ const Home = () => {
             flex: 1,
             justifyContent: 'flex-end',
             alignItems: 'flex-end',
-            backgroundColor: "#fff",
+            backgroundColor: "#060534",
         },
         chatButton: {
             backgroundColor: colors.primary,

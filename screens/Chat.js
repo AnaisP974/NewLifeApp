@@ -38,7 +38,7 @@ import React, {
               }}
               onPress={onSignOut}
             >
-              <AntDesign name="logout" size={24} color={colors.gray} style={{marginRight: 10}}/>
+              <AntDesign name="logout" size={24} color={colors.blue} style={{marginRight: 10}}/>
             </TouchableOpacity>
           )
         });
@@ -89,7 +89,7 @@ import React, {
           showUserAvatar={false}
           onSend={messages => onSend(messages)}
           messagesContainerStyle={{
-            backgroundColor: '#fff'
+            backgroundColor: '#060534'
           }}
           textInputStyle={{
             backgroundColor: '#fff',
