@@ -68,7 +68,7 @@ const styles = StyleSheet.create({
     color: "orange",
     alignSelf: "center",
     paddingBottom: 16,
-    marginTop: 220,
+    marginTop: 250,
   },
   input: {
     backgroundColor: "#F6F7FB",

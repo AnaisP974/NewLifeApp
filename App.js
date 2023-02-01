@@ -7,8 +7,12 @@ import { auth } from './config/firebase';
 import Login from './screens/Login';
 import Signup from './screens/Signup';
 import Chat from './screens/Chat';
-import Home from './screens/Home';
+import Profile from './screens/Profile';
 import Accueil from './screens/Accueil';
+import QuizzDep from './screens/QuizzDep';
+
+
+
 
 const Stack = createStackNavigator();
 const AuthenticatedUserContext = createContext({});
@@ -24,8 +28,9 @@ return (
 
 function ChatStack() {
   return (
-    <Stack.Navigator defaultScreenOptions={Home}>
-      <Stack.Screen name='Home' component={Home} />
+    <Stack.Navigator defaultScreenOptions={QuizzDep}>
+      <Stack.Screen name='QuizzDep' component={QuizzDep} />
+      <Stack.Screen name='Profile' component={Profile} />
       <Stack.Screen name='Chat' component={Chat} />
     </Stack.Navigator>
   );
@@ -76,5 +81,6 @@ export default function App() {
     <AuthenticatedUserProvider>
       <RootNavigator />
     </AuthenticatedUserProvider>
+
   );
 }
